@@ -3,13 +3,45 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.test.testcases.PageCoursesTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="selectFilter"/>
+          <include name="validatePageTitle"/>
+        </methods>
+      </class> <!-- com.test.testcases.PageCoursesTest -->
       <class name="com.test.testcases.ProductsHomeTest">
         <methods>
           <include name="fillingFormUsingValidDetails"/>
+          <include name="fillingWithoutJobFunction"/>
+          <include name="tearDown"/>
+          <include name="validateFEHomePageTitle"/>
+          <include name="setUp"/>
+          <include name="fillingWithoutEmail"/>
+          <include name="fillingWithoutFirstName"/>
+          <include name="fillingWithoutJobTitle"/>
+          <include name="fillingWithoutIntituteName"/>
+          <include name="fillingWithoutLastName"/>
+          <include name="fillingWithoutPhone"/>
+        </methods>
+      </class> <!-- com.test.testcases.ProductsHomeTest -->
+      <class name="com.test.testcases.LandingPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="pageLogoTest"/>
+          <include name="landingPageTitleTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.testcases.LandingPageTest -->
+      <class name="com.test.testcases.ExtractCourseTest">
+        <methods>
+          <include name="secondcourse"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.test.testcases.ProductsHomeTest -->
+      </class> <!-- com.test.testcases.ExtractCourseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
